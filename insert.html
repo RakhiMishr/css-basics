@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+    p {
+      color: blue;
+      font-size: 18px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h5>Inline CSS</h5>
+    <h1 style="color: red; font-size: 30px;">Hello CSS</h1>
+
+
+    <p>Internal CSS</p>
+
+    <div class="Hello">3️⃣ External CSS (Best Method)
+
+CSS ko alag file me likhte hain
+Aur HTML me link karte hain</div>
+
+<hr>
+text color & background-color
+
+<hr>
+<div>CSS me text color aur background color ka use
+👉 text ka rang aur page / element ka background rang change karne ke liye hota hai।
+
+1️⃣ Text Color kya hota hai?
+
+Text color ka matlab hota hai
+👉 text ka rang (red, blue, green etc.)
+
+CSS Property:
+color
+
+Example:
+p {
+  color: red;
+}
+
+
+👉 Sabhi paragraph ka text red ho jayega
+
+2️⃣ Background Color kya hota hai?
+
+Background color ka matlab hota hai
+👉 kisi element ke peeche ka rang
+
+CSS Property:
+background-color
+
+Example:
+div {
+  background-color: yellow;
+}
+
+
+👉 <div> ka background yellow ho jayega
+
+HTML + CSS Example
+<p class="text">Hello CSS</p>
+
+.text {
+  color: blue;
+  background-color: lightgray;
+}
+
+
+✔ Text ka color = blue
+✔ Background color = lightgray
+
+Page ka Background Color
+
+Pure page ka background change karne ke liye:
+
+body {
+  background-color: lightblue;
+}
+
+Color likhne ke tareeke
+
+CSS me color likhne ke 3 common tareeke hote hain:
+
+1️⃣ Color Name
+color: red;
+
+2️⃣ HEX Code
+color: #ff0000;
+
+3️⃣ RGB
+color: rgb(255, 0, 0);
+
+Text color vs Background color
+Text Color	Background Color
+Text ka rang	Peeche ka rang
+color	background-color
+Readability	Design
+Important Tip ⚠️
+
+✔ Text aur background ka contrast sahi rakho
+❌ Same color mat rakho (text dikhega nahi)
+
+📌 Conclusion
+
+👉 Text color = likhe hue text ka rang
+👉 Background color = element ke peeche ka rang
+👉 Dono milkar website ko attractive & readable banate hain
+
+Agar aap chaho to main:
+
+CSS colors practice
+
+Contrast & accessibility tips
+
+Mini project example
+
+👉 Batao next kya samjhau? 😊</div>
+
+
+<hr>
+<h1>Text Alignment</h1>
+<hr>
+<div>Text Alignment ka matlab
+
+Text alignment ka matlab hota hai
+👉 text ko kis direction / position me dikhana (left, center, right, justify).
+
+Iske liye CSS me text-align property use hoti hai।
+
+Text Align Property
+text-align: value;
+
+Text Alignment ke Types
+1️⃣ Left Align (Default)
+
+Text left side se start hota hai
+
+p {
+  text-align: left;
+}
+
+
+📌 Ye by default hota hai
+
+2️⃣ Center Align
+
+Text beech me aa jata hai
+
+h1 {
+  text-align: center;
+}
+
+
+📌 Headings ke liye zyada use hota hai
+
+3️⃣ Right Align
+
+Text right side se align hota hai
+
+p {
+  text-align: right;
+}
+
+
+📌 Buttons / special text ke liye
+
+4️⃣ Justify
+
+Text dono side se equal straight ho jata hai (newspaper jaisa)
+
+p {
+  text-align: justify;
+}
+
+
+📌 Paragraph ke liye best
+
+HTML + CSS Example
+<p class="para">CSS text alignment example</p>
+
+.para {
+  text-align: center;
+}
+
+Important Point ⚠️
+
+❌ text-align element ko center nahi karta
+✔ Ye sirf text ko align karta hai
+
+(Element center ke liye margin: auto use hota hai)
+
+Text Alignment Values Summary
+Value	Use
+left	Left side
+center	Center
+right	Right side
+justify	Both side equal
+Real Life Example 🧠
+
+📄 Newspaper → justify
+🎯 Heading → center
+📝 Normal text → left
+
+📌 Conclusion
+
+👉 Text alignment se text ka look improve hota hai
+👉 CSS ka important design feature hai
+
+Agar aap chaho to main:
+
+Vertical alignment
+
+Text decoration
+
+Mini project practice
+
+👉 Batao next kya padhna hai? 😊</div>
+<hr>
+<h2>Text Transformation</h2>
+<div>Text Transformation CSS ka ek property hai jiska use karke hum text ke letters ka case (capital / small) change kar sakte hain — bina text ko HTML me change kiye.
+
+Matlab:
+👉 Same text, lekin dikhne ka style badal jata hai।
+
+🔹 text-transform Property
+
+CSS me text transform ke liye ye property use hoti hai:
+
+text-transform: value;
+
+🔸 Text Transform ki Values
+1️⃣ uppercase
+
+👉 Sab letters CAPITAL ho jate hain
+
+p {
+  text-transform: uppercase;
+}
+
+
+Output:
+hello world → HELLO WORLD
+
+2️⃣ lowercase
+
+👉 Sab letters small ho jate hain
+
+p {
+  text-transform: lowercase;
+}
+
+
+Output:
+HELLO WORLD → hello world
+
+3️⃣ capitalize
+
+👉 Har word ka pehla letter CAPITAL ho jata hai
+
+p {
+  text-transform: capitalize;
+}
+
+
+Output:
+hello world → Hello World
+
+4️⃣ none (default)
+
+👉 Text jaisa likha hai waisa hi rahega
+
+p {
+  text-transform: none;
+}
+
+🧪 Complete Example
+.upper { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+.cap   { text-transform: capitalize; }
+
+<p class="upper">hello css</p>
+<p class="lower">HELLO CSS</p>
+<p class="cap">hello css</p>
+
+
+🎯 Text Transform ka use kahan hota hai?
+
+✔ Headings ko stylish banane me
+✔ Buttons ke text ko capital karne me
+✔ Uniform design ke liye
+✔ Form labels ke liye
+
+⚠️ Important Note
+
+🔹 Ye sirf display change karta hai
+🔹 Original text same hi rehta hai
+🔹 Copy–paste karne par original text copy hota hai
+
+Agar chaho to main:
+
+text-decoration
+
+text-shadow
+
+font properties
+
+CSS practice questions
+
+bhi simple Hindi me samjha du 😊</div>
+<hr>
+<h2>Text Spacing in CSS</h2>
+<div>Text Spacing CSS me wo properties hoti hain jinki madad se hum letters, words, lines aur paragraphs ke beech ka gap (space) control karte hain.
+
+Matlab:
+👉 Text kitna faila hua ya chipka hua dikhe — ye sab text spacing se decide hota hai।
+
+🔹 Text Spacing ki Main CSS Properties
+1️⃣ letter-spacing
+
+👉 Letters ke beech ka gap control karta hai
+
+p {
+  letter-spacing: 2px;
+}
+
+
+Output:
+H E L L O
+
+🔹 Negative value bhi de sakte ho:
+
+letter-spacing: -1px;
+
+2️⃣ word-spacing
+
+👉 Words ke beech ka gap badhata ya kam karta hai
+
+p {
+  word-spacing: 10px;
+}
+
+
+Output:
+Hello World
+
+3️⃣ line-height
+
+👉 Lines ke beech ka gap (upar–neeche ka space)
+
+p {
+  line-height: 30px;
+}
+
+
+🔹 Reading ke liye text ko comfortable banata hai
+
+4️⃣ text-indent
+
+👉 Paragraph ki pehli line ko aage se space deta hai
+
+p {
+  text-indent: 40px;
+}
+
+
+📘 Books / articles me zyada use hota hai
+
+5️⃣ white-space
+
+👉 Text me spaces aur line breaks ka behavior control karta hai
+
+p {
+  white-space: nowrap;
+}
+
+
+🔹 Line break nahi hoti
+🔹 Extra spaces same rehte hain
+
+🧪 Complete Example
+p {
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  line-height: 28px;
+  text-indent: 40px;
+}
+
+<p>
+CSS text spacing se text zyada readable aur
+achha dikhne lagta hai.
+</p>
+
+
+🎯 Text Spacing kyu important hai?
+
+✔ Website readable hoti hai
+✔ Professional look milta hai
+✔ Mobile & desktop dono me better view
+✔ UI / UX improve hota hai
+
+📌 Short Trick yaad rakhne ke liye
+
+letter → letters ka gap</div>
+
+<hr>
+<h1>Text Decoration & shadowS</h1>
+<div>CSS me text-decoration aur text-shadow ka use text ko style, highlight aur attractive banane ke liye hota hai.
+
+🔷 1. Text Decoration kya hota hai?
+
+text-decoration property text ke neeche, upar ya beech me line lagane ke liye use hoti hai.
+
+🔹 Syntax
+text-decoration: value;
+
+🔸 Text Decoration ki Values
+1️⃣ underline
+
+👉 Text ke neeche line
+
+p {
+  text-decoration: underline;
+}
+
+2️⃣ overline
+
+👉 Text ke upar line
+
+p {
+  text-decoration: overline;
+}
+
+3️⃣ line-through
+
+👉 Text ke beech se line (cut hua jaisa)
+
+p {
+  text-decoration: line-through;
+}
+
+4️⃣ none
+
+👉 Koi decoration nahi (links se underline hatane me use hota hai)
+
+a {
+  text-decoration: none;
+}
+
+🔹 Example
+<p style="text-decoration: underline;">Underline Text</p>
+<p style="text-decoration: line-through;">Cut Text</p>
+<a href="#">Link without underline</a>
+
+🔷 2. Text Shadow kya hota hai?
+
+text-shadow property text ke peeche shadow (chhaya) add karti hai.
+
+🔹 Syntax
+text-shadow: x-offset y-offset blur color;
+
+🔸 text-shadow ke parts
+Part	Matlab
+x-offset	left / right shadow
+y-offset	up / down shadow
+blur	shadow ka blur
+color	shadow ka rang
+🔹 Example
+h1 {
+  text-shadow: 2px 2px 5px gray;
+}
+
+🔹 Multiple Shadow Example
+h1 {
+  text-shadow: 2px 2px red, 4px 4px blue;
+}
+
+🧪 Complete HTML + CSS Example
+h1 {
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-decoration: line-through;
+}
+
+<h1>CSS Text Style</h1>
+<p>Old Price</p>
+<a href="#">Click Here</a>
+
+
+🎯 Use kaha hota hai?
+
+✔ Headings ko attractive banane me
+✔ Discount / offer text dikhane me
+✔ Links ka underline remove karne me
+✔ UI design aur buttons me
+
+⚠️ Important Points
+
+🔹 Zyada text-shadow use karne se text unreadable ho sakta hai
+🔹 text-decoration se sirf line lagti hai, color alag se set karna padta hai
+
+Agar chaho to next main:
+</div>
+<hr>
+<h2>Font Properties in CSS</h2>
+<div>Font CSS ka use website ke text ka style, size, thickness aur family change karne ke liye hota hai.
+Matlab:
+👉 Text ka look & readability control karna = Font CSS
+
+🔹 Font ki Main CSS Properties
+1️⃣ font-family
+
+👉 Text ka font type / style set karta hai
+
+p {
+  font-family: Arial, sans-serif;
+}
+
+
+🔹 Browser pehla font na mile to dusra use karta hai
+
+2️⃣ font-size
+
+👉 Text ka size control karta hai
+
+p {
+  font-size: 20px;
+}
+
+
+🔹 Units: px, em, rem, %
+
+3️⃣ font-weight
+
+👉 Text ko bold ya light banata hai
+
+p {
+  font-weight: bold;
+}
+
+
+🔹 Values: normal, bold, 100–900
+
+4️⃣ font-style
+
+👉 Text ko italic banata hai
+
+p {
+  font-style: italic;
+}
+
+
+🔹 Values: normal, italic, oblique
+
+5️⃣ font-variant
+
+👉 Text ko small-caps me convert karta hai
+
+p {
+  font-variant: small-caps;
+}
+
+🔹 Font Shorthand Property
+
+Sab font properties ek line me likh sakte ho:
+
+p {
+  font: italic bold 18px Arial;
+}
+
+
+🔸 Order important hota hai:
+
+font-style → font-weight → font-size → font-family
+
+🧪 Complete Example
+p {
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+<p>CSS Font Example</p>
+
+
+🎯 Font CSS kyu important hai?
+
+✔ Text readable hota hai
+✔ Website professional lagti hai
+✔ Branding ke liye alag fonts
+✔ Mobile & desktop friendly design
+
+📌 Common Fonts
+
+Arial
+
+Verdana
+
+Times New Roman
+
+Georgia
+
+Poppins (Google Font)
+
+⚠️ Important Tips
+
+🔹 Hamesha fallback font likho
+🔹 Zyada fonts use na karo
+🔹 Body ke liye simple font best hota hai
+
+Agar chaho to next main:
+👉 Google Fonts ka use
+👉 px vs em vs rem difference
+👉 Font + Text complete practice
+
+bhi Hindi me samjha du 😊</div>
+<hr>
+<h2>css colors</h2>
+<div>Color CSS ka use website ke text, background, border aur elements ke rang set karne ke liye hota hai।
+Matlab:
+👉 Website ko attractive aur readable banana = CSS Colors
+
+🔹 CSS me Color kaise set karte hain?
+
+CSS me color likhne ke 4 common tareeke hote hain 👇
+
+1️⃣ Color Name
+
+Direct color ka naam likh dete hain
+
+p {
+  color: red;
+}
+
+
+✔ Easy
+❌ Limited colors
+
+2️⃣ RGB Color
+
+Red, Green, Blue ka mix (0–255)
+
+p {
+  color: rgb(255, 0, 0);
+}
+
+3️⃣ HEX Color
+
+Sabse zyada use hota hai (Hexadecimal)
+
+p {
+  color: #ff0000;
+}
+
+
+🔹 # ke baad 6 digits
+🔹 Short form bhi hota hai: #f00
+
+4️⃣ HSL Color
+
+Hue, Saturation, Lightness
+
+p {
+  color: hsl(0, 100%, 50%);
+}
+
+
+✔ Professional design me use hota hai
+
+🔹 Background Color
+
+Element ka background color set karta hai
+
+div {
+  background-color: yellow;
+}
+
+🔹 Border Color
+
+Border ka rang set karta hai
+
+p {
+  border: 2px solid blue;
+}
+
+🧪 Complete Example
+h1 {
+  color: blue;
+}
+
+p {
+  color: #ff5733;
+  background-color: #f0f0f0;
+}
+
+div {
+  border: 2px solid green;
+}
+
+<h1>CSS Color Example</h1>
+<p>Yeh text colored hai</p>
+<div>Border Color Example</div>
+
+
+🎯 CSS Colors kyu important hai?
+
+✔ Text readable banane ke liye
+✔ UI / UX improve karne ke liye
+✔ Branding ke liye
+✔ Buttons, links highlight karne ke liye
+
+⚠️ Important Tips
+
+🔹 Light background par dark text best hota hai
+🔹 Zyada bright colors avoid karo
+🔹 Accessibility ka dhyaan rakho
+
+📌 Yaad rakhne ka shortcut
+
+color → text ka rang
+
+background-color → background ka rang
+
+border-color → border ka rang
+
+Agar chaho to next main:
+👉 CSS Gradient
+👉 Opacity vs RGBA
+👉 CSS color practice MCQs
+
+bhi Hindi me samjha du 😊</div>
+<hr>
+<h1>box model css</h1>
+<div>CSS Box Model ek concept hai jo batata hai ki HTML ka har element ek box hota hai.
+Is box ke 4 main parts hote hain, jinke through element ka size, spacing aur layout control hota hai.
+
+📦 CSS Box Model ke 4 Parts
+-------------------------
+|        Margin         |
+|  -------------------  |
+|  |     Border      |  |
+|  |  -------------  |  |
+|  |  |  Padding  |  |  |
+|  |  | -------- |  |  |
+|  |  | Content  |  |  |
+|  |  | -------- |  |  |
+|  |  -------------  |  |
+|  -------------------  |
+-------------------------
+
+1️⃣ Content
+
+👉 Actual content hota hai (text, image, etc.)
+
+width: 200px;
+height: 100px;
+
+2️⃣ Padding
+
+👉 Content aur border ke beech ka space
+
+padding: 20px;
+
+
+🔹 Background color padding tak apply hota hai
+
+3️⃣ Border
+
+👉 Padding ke bahar line (outline jaisi)
+
+border: 2px solid black;
+
+4️⃣ Margin
+
+👉 Ek element aur dusre element ke beech ka space
+
+margin: 15px;
+
+
+🔹 Background color margin par apply nahi hota
+
+🧪 Complete Example
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 20px;
+  border: 3px solid blue;
+  margin: 15px;
+}
+
+<div class="box">CSS Box Model</div>
+
+
+📐 Total Box Size kaise nikalte hain?
+
+Default box model me:
+
+Total Width = width + padding + border + margin
+Total Height = height + padding + border + margin
+
+🔁 box-sizing property (Important)
+
+By default CSS padding & border ko width ke bahar jodta hai.
+Is problem ko solve karta hai:
+
+box-sizing: border-box;
+
+
+🔹 Ab padding aur border width ke andar aate hain
+
+.box {
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+🎯 Box Model kyu important hai?
+
+✔ Layout sahi banane ke liye
+✔ Spacing control karne ke liye
+✔ Responsive design ke liye
+✔ Interview questions me common topic
+
+📌 Yaad rakhne ka trick
+</div>
+<hr>
+<h2>borders</h2>
+<div>Border CSS ka use HTML elements ke chaaro taraf line / boundary lagane ke liye hota hai.
+Isse element clear, highlighted aur structured dikhai deta hai.
+
+🔹 Border CSS ki Main Properties
+1️⃣ border-style
+
+👉 Border ka type / design batata hai
+
+border-style: solid;
+
+
+Common styles:
+
+solid – simple line
+
+dotted – bindi-bindi
+
+dashed – toot-toot ke
+
+double – double line
+
+none – no border
+
+2️⃣ border-width
+
+👉 Border ki motai (thickness)
+
+border-width: 2px;
+
+3️⃣ border-color
+
+👉 Border ka rang
+
+border-color: red;
+
+🔹 Border Shorthand (ek line me)
+border: 2px solid blue;
+
+
+👉 Order: width → style → color
+
+🔹 Side-wise Border
+
+Alag-alag side pe border laga sakte ho:
+
+border-top: 2px solid red;
+border-right: 3px dashed green;
+border-bottom: 2px dotted blue;
+border-left: 4px solid black;
+
+🔹 Rounded Border (border-radius)
+
+👉 Border ke corners gol kar deta hai
+
+border-radius: 10px;
+
+
+🔹 Circle banane ke liye:
+
+border-radius: 50%;
+
+🧪 Complete Example
+.box {
+  width: 200px;
+  height: 100px;
+  border: 3px solid purple;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+<div class="box">CSS Border Example</div>
+
+
+🎯 Border CSS kyu important hai?
+
+✔ Elements ko clearly dikhane ke liye
+✔ Buttons, cards design karne me
+✔ Layout debugging ke liye
+✔ UI ko professional banane ke liye
+
+⚠️ Important Points</div>
+<hr>
+<h2>Background</h2>
+<div>🎨 Background CSS क्या है?
+
+Background CSS का इस्तेमाल किसी भी HTML element (जैसे div, body, section)
+के पीछे का रंग, image या effect लगाने के लिए किया जाता है।
+
+1️⃣ background-color
+
+👉 Element के पीछे color लगाने के लिए
+
+body{
+  background-color: lightpink;
+}
+
+
+📌 पूरे page का background गुलाबी हो जाएगा
+
+2️⃣ background-image
+
+👉 Background में image लगाने के लिए
+
+div{
+  background-image: url("bg.jpg");
+}
+
+3️⃣ background-repeat
+
+👉 Image को repeat करना है या नहीं
+
+div{
+  background-repeat: no-repeat;
+}
+
+
+Options:
+
+repeat (default)
+
+no-repeat
+
+repeat-x
+
+repeat-y
+
+4️⃣ background-size
+
+👉 Image का size control करता है
+
+div{
+  background-size: cover;
+}
+
+
+Values:
+
+cover → पूरी screen भर देगा
+
+contain → पूरी image दिखाएगा
+
+5️⃣ background-position
+
+👉 Image को कहाँ दिखाना है
+
+div{
+  background-position: center;
+}
+
+
+Examples:
+
+top
+
+bottom
+
+left
+
+right
+
+center
+
+6️⃣ background-attachment
+
+👉 Scroll करने पर image fix रहे या चले
+
+body{
+  background-attachment: fixed;
+}
+
+7️⃣ background: shorthand (short तरीका)
+
+👉 एक line में सब कुछ
+
+body{
+  background: pink url("bg.jpg") no-repeat center / cover;
+}
+
+8️⃣ background: transparent
+
+👉 Background को पूरी तरह transparent करने के लिए
+
+div{
+  background: transparent;
+}
+
+
+📌 नीचे का content दिखाई देगा
+
+🧠 Simple Example (Shayari Card)
+.shayari-card{
+  background: white;
+  border-radius: 10px;
+}
+
+🔥 Important Note
+
+❌ गलत</div>
+<hr>
+<h2>Margin & Padding</h2>
+<div>📦 Margin और Padding क्या है?
+
+CSS में margin और padding किसी element के आसपास और अंदर की spacing (खाली जगह) को control करते हैं।
+
+👉 Simple line में
+
+Margin = element के बाहर की जगह
+
+Padding = element के अंदर की जगह
+
+🟦 Padding क्या है?
+
+👉 Content और border के बीच की जगह
+
+Example:
+.box{
+  padding: 20px;
+}
+
+
+📌 Text और box के border के बीच 20px का gap आएगा
+
+Padding के types:
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 20px;
+padding-left: 25px;
+
+Shortcut:
+padding: 10px 20px;
+
+
+(top-bottom | left-right)
+
+🟥 Margin क्या है?
+
+👉 Element और दूसरे element के बीच की जगह
+
+Example:
+.box{
+  margin: 30px;
+}
+
+
+📌 Box दूसरे elements से 30px दूर हो जाएगा
+
+Margin के types:
+margin-top: 10px;
+margin-right: 15px;
+margin-bottom: 20px;
+margin-left: 25px;
+
+Shortcut:
+margin: 10px 20px;
+
+🧠 Real Life Example
+|------- Margin -------|
+|   |--- Padding ---|  |
+|   |   Content     |  |
+|   |---------------|  |
+|----------------------|
+
+🔥 Margin vs Padding (Difference)
+Margin	Padding
+बाहर की spacing	अंदर की spacing
+Transparent होती है	Background color दिखता है
+Elements के बीच gap	Content और border के बीच gap
+⚠️ Important Tip
+
+Padding में background color दिखता है
+
+Margin में background नहीं दिखता
+
+✨ Example Code
+.card{
+  background: pink;
+  padding: 15px;
+  margin: 20px;
+}
+
+
+अगर आप चाहें तो मैं:
+
+📦 Box Model
+
+🎯 margin auto center
+
+❌ margin collapse
+
+भी आसान हिंदी में समझा सकता हूँ 👍</div>
+<hr>
+<h2>height width</h2>
+<div>📐 Height और Width क्या है? (CSS)
+
+height और width CSS properties हैं,
+जिनसे किसी भी HTML element की ऊँचाई (height) और चौड़ाई (width) तय की जाती है।
+
+🟥 Width (चौड़ाई)
+
+👉 Element कितना चौड़ा होगा, यह बताता है।
+
+Example:
+.box{
+  width: 300px;
+}
+
+
+📌 Box की चौड़ाई 300px हो जाएगी
+
+🟦 Height (ऊँचाई)
+
+👉 Element कितना ऊँचा होगा, यह बताता है।
+
+Example:
+.box{
+  height: 200px;
+}
+
+
+📌 Box की ऊँचाई 200px हो जाएगी
+
+📏 Units (इकाइयाँ)
+
+Height और Width में अलग-अलग units use होती हैं:
+
+Unit	मतलब
+px	Fixed size
+%	Parent के हिसाब से
+vh	Screen की height
+vw	Screen की width
+auto	Content के हिसाब से
+Example:
+.box{
+  width: 50%;
+  height: 50vh;
+}
+
+📦 Box Model से Relation
+
+👉 height/width सिर्फ content area की होती है
+👉 padding और border जोड़ने से actual size बढ़ जाता है
+
+.box{
+  width: 200px;
+  padding: 20px;
+}
+
+
+📌 Total width = 240px
+
+🔥 box-sizing trick
+.box{
+  box-sizing: border-box;
+}
+
+
+👉 अब padding + border, width/height के अंदर ही रहेंगे ✅
+
+⚠️ Common Mistakes
+
+❌ गलत
+
+height: 200;
+
+
+✅ सही
+
+height: 200px;
+
+🧠 Real Example
+.card{
+  width: 300px;
+  height: auto;
+}
+
+
+📌 Height content के अनुसार बढ़ेगी
+
+✨ Extra Tip
+
+Images के लिए:
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+👉 Image stretch नहीं होगी
+
+अगर आप चाहें तो मैं:
+
+📦 min-height / max-width
+
+📱 responsive sizing
+
+🎯 center box using width
+
+भी आसान हिंदी में समझा सकता हूँ 👍</div>
+<hr>
+<h2>Css display</h2>
+<div>📺 CSS Display क्या है?
+
+display CSS की एक property है,
+जो ये तय करती है कि कोई HTML element कैसे दिखाई देगा
+और page पर कितनी जगह लेगा।
+
+1️⃣ display: block
+
+👉 Element नई line से शुरू होता है
+👉 पूरी width ले लेता है
+
+Example:
+div{
+  display: block;
+}
+
+
+📌 Examples: div, p, h1
+
+2️⃣ display: inline
+
+👉 Element same line में रहता है
+👉 height, width काम नहीं करता
+
+Example:
+span{
+  display: inline;
+}
+
+
+📌 Examples: span, a, strong
+
+3️⃣ display: inline-block
+
+👉 Same line में भी रहता है
+👉 height और width भी काम करता है
+
+Example:
+button{
+  display: inline-block;
+}
+
+4️⃣ display: none
+
+👉 Element पूरी तरह गायब हो जाता है
+👉 space भी नहीं लेता
+
+Example:
+.box{
+  display: none;
+}
+
+5️⃣ display: flex
+
+👉 Layout बनाने के लिए सबसे ज्यादा use होता है
+
+Example:
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+📌 Elements line में arrange हो जाते हैं
+
+6️⃣ display: grid
+
+👉 Row और column वाला layout
+
+Example:
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+🧠 Difference Table
+Display	नई line	Width/Height	Use
+block	✅	✅	Sections
+inline	❌	❌	Text
+inline-block	❌	✅	Buttons
+none	❌	❌	Hide
+flex	❌	✅	Layout
+grid	❌	✅	Layout
+⚠️ display vs visibility
+visibility: hidden;
+
+
+👉 Element छुपेगा लेकिन जगह रहेगी
+
+display: none;
+
+
+👉 Element और उसकी जगह दोनों हट जाएँगे
+
+🔥 Real Example (Shayari Card)
+.shayari-container{
+  display: flex;
+  gap: 20px;
+}
+
+
+अगर आप चाहें तो मैं:
+
+📦 display practice questions
+
+🎯 flex vs grid difference
+
+💡 real website layout example
+
+भी आसान हिंदी में समझा सकता हूँ 👍</div>
+<hr>
+<h2>Css position</h2>
+<div>📍 CSS Position क्या है?
+
+position CSS की एक property है,
+जिससे यह तय होता है कि कोई HTML element page पर कहाँ और कैसे रखा जाएगा।
+
+1️⃣ position: static (default)
+
+👉 हर element का default position
+👉 top, left, right, bottom काम नहीं करता
+
+.box{
+  position: static;
+}
+
+2️⃣ position: relative
+
+👉 Element अपनी original जगह से move करता है
+👉 Space वहीं रहता है
+
+.box{
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+
+📌 Box थोड़ा नीचे-दाएँ खिसक जाएगा
+
+3️⃣ position: absolute
+
+👉 Element parent के हिसाब से move होता है
+👉 Space नहीं लेता
+
+.parent{
+  position: relative;
+}
+
+.child{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+📌 Child parent के कोने में चला जाएगा
+
+4️⃣ position: fixed
+
+👉 Element screen पर fix रहता है
+👉 Scroll करने पर भी नहीं हिलता
+
+.nav{
+  position: fixed;
+  top: 0;
+}
+
+
+📌 Navbar हमेशा ऊपर दिखेगा
+
+5️⃣ position: sticky
+
+👉 Scroll पर चिपक जाता है (mix of relative + fixed)
+
+.header{
+  position: sticky;
+  top: 0;
+}
+
+
+📌 Scroll करने पर header stick हो जाएगा
+
+🧠 Important Properties
+
+Position के साथ ये use होती हैं:
+
+top
+
+left
+
+right
+
+bottom
+
+z-index
+
+🔥 z-index क्या है?
+
+👉 कौन सा element ऊपर दिखेगा
+
+.box1{ z-index: 1; }
+.box2{ z-index: 5; }
+
+
+📌 Box2 ऊपर दिखेगा
+
+📊 Comparison Table
+Position	Space लेता है	Scroll effect
+static	✅	normal
+relative	✅	normal
+absolute	❌	parent based
+fixed	❌	fixed
+sticky	✅	sticky
+✨ Real Example (Envelope / Shayari)
+.cover{
+  position: absolute;
+  z-index: 3;
+}
+
+
+👉 Cover ऊपर दिखेगा
+
+अगर आप चाहें तो मैं:
+
+🎯 absolute vs relative deep
+
+💌 envelope animation
+
+📱 mobile layout positioning
+
+भी आसान हिंदी में समझा सकता हूँ 👍</div>
+<hr>
+<h2>z-index</h2>
+<div>🧱 z-index क्या है? (CSS)
+
+z-index CSS की एक property है
+जो यह तय करती है कि कौन-सा element ऊपर दिखेगा और कौन-सा नीचे।
+
+👉 इसे आप layers (परतों) की तरह समझ सकते हैं।
+
+📊 Simple Example
+.box1{
+  position: absolute;
+  z-index: 1;
+}
+
+.box2{
+  position: absolute;
+  z-index: 5;
+}
+
+
+📌 box2 ऊपर दिखेगा क्योंकि उसका z-index ज्यादा है
+
+⚠️ Important Rule (बहुत जरूरी)
+
+👉 z-index तभी काम करता है जब position हो
+
+❌ गलत
+
+.box{
+  z-index: 10;
+}
+
+
+✅ सही
+
+.box{
+  position: relative;
+  z-index: 10;
+}
+
+🔢 z-index values
+
+Positive number → ऊपर
+
+Negative number → नीचे
+
+0 → normal layer
+
+.box{
+  z-index: -1;
+}
+
+📦 Real Life Example (Shayari Envelope)
+.paper{
+  position: relative;
+  z-index: 1;
+}
+
+.cover{
+  position: absolute;
+  z-index: 3;
+}
+
+
+📌 Cover, paper के ऊपर दिखेगा 💌
+
+🧠 stacking context (simple)
+
+अगर parent element में:
+
+position: relative;
+z-index: 1;
+
+
+तो उसके अंदर के elements उसी parent की boundary में रहेंगे।
+
+❓ z-index vs order
+
+अगर z-index same है:
+👉 जो element HTML में बाद में लिखा होगा, वही ऊपर दिखेगा
+
+🔥 Common Mistakes
+
+❌ position न देना
+❌ बहुत ज्यादा z-index (99999) बिना जरूरत
+
+📝 Summary
+
+z-index = layer control
+
+position जरूरी है
+
+ज्यादा value = ऊपर
+
+अगर आप चाहें तो मैं:
+
+🎯 z-index interview questions
+
+💥 overlapping card effect
+
+🧠 stacking context deep
+
+भी आसान हिंदी में समझा सकता हूँ 👍</div>
+<hr>
+<h2>Css Animation </h2>
+<div>🎬 CSS Animation क्या है?
+
+CSS Animation का मतलब है
+किसी HTML element को बिना JavaScript के
+हिलाना-डुलाना, घुमाना, fade करना या animate करना।
+
+👉 जैसे:
+
+button का bounce होना
+
+card का slide होना
+
+envelope का open होना 💌
+
+🧱 CSS Animation के 2 Parts
+1️⃣ @keyframes
+
+👉 Animation के steps बताते हैं
+
+2️⃣ animation property
+
+👉 Animation कैसे चलेगी (time, repeat, direction)
+
+✨ Simple Example (Color change)
+@keyframes changeColor {
+  from {
+    background: pink;
+  }
+  to {
+    background: red;
+  }
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  animation: changeColor 2s infinite;
+}
+
+
+📌 Box का color बार-बार बदलेगा
+
+🎯 Position Animation Example (Move)
+@keyframes moveBox {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.box{
+  position: relative;
+  animation: moveBox 3s infinite alternate;
+}
+
+⚙️ Animation Properties (Important)
+animation-name: moveBox;
+animation-duration: 3s;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+Short form:
+animation: moveBox 3s ease-in-out infinite alternate;
+
+⏱️ timing-function क्या है?
+
+Animation की speed control करता है
+
+linear → same speed
+
+ease → slow → fast → slow
+
+ease-in
+
+ease-out
+
+ease-in-out
+
+🔁 iteration-count
+animation-iteration-count: infinite;
+
+
+👉 Animation बार-बार चलेगी
+
+🛑 animation-fill-mode
+animation-fill-mode: forwards;
+
+
+👉 Animation खत्म होने के बाद last position पर रुक जाएगी
+
+💌 Real Example (Envelope open)
+@keyframes openCover {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(180deg);
+  }
+}
+
+.cover{
+  animation: openCover 2s forwards;
+}
+
+⚠️ Common Mistakes
+
+❌ @keyframe (गलत)
+✅ @keyframes (सही)
+
+❌ duration न देना
+👉 animation चलेगी ही नहीं
+
+📝 Summary
+
+CSS animation = movement without JS
+
+@keyframes जरूरी
+
+duration जरूरी
+
+अगर आप चाहें तो मैं:
+
+🎯 hover animation
+
+💖 shayari card animation
+
+💌 envelope open animation</div>
+<hr>
+<h2>Css Transition</h2>
+<div>🔄 CSS Transition क्या है?
+
+CSS Transition का मतलब है
+जब किसी element की property बदलती है,
+तो वह बदलाव धीरे-धीरे (smooth तरीके से) हो।
+
+👉 बिना transition के change अचानक होता है
+👉 transition के साथ change smooth दिखता है
+
+🎯 Simple Example (Hover Effect)
+.button{
+  background: pink;
+  padding: 10px 20px;
+  transition: background 0.5s;
+}
+
+.button:hover{
+  background: red;
+}
+
+
+📌 Hover करने पर color धीरे-धीरे बदलेगा
+
+🧱 Transition के 4 Parts
+transition: property duration timing-function delay;
+
+Example:
+transition: all 0.3s ease 0s;
+
+⚙️ Transition Properties Explained
+1️⃣ transition-property
+transition-property: width;
+
+
+👉 कौन-सी property animate होगी
+
+2️⃣ transition-duration
+transition-duration: 1s;
+
+
+👉 कितने time में change होगा
+
+3️⃣ transition-timing-function
+transition-timing-function: ease-in-out;
+
+
+👉 speed control
+
+4️⃣ transition-delay
+transition-delay: 0.5s;
+
+
+👉 delay के बाद start होगा
+
+🔥 Real Example (Card Zoom)
+.card{
+  transition: transform 0.4s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+⚠️ Important Points
+
+❌ Transition अपने-आप नहीं चलता
+👉 hover / class change / JS से trigger होता है
+
+❌ display पर transition काम नहीं करता
+
+🆚 Transition vs Animation
+Transition	Animation
+Trigger चाहिए	Auto चल सकती है
+Simple effects	Complex effects
+Hover best	Loop, keyframes
+📝 Summary
+
+Transition = smooth change
+
+Trigger जरूरी
+
+Hover effects के लिए best
+
+अगर आप चाहें तो मैं:
+
+💌 envelope open transition
+
+🎯 button hover effects
+
+📱 real website transition examples
+
+भी बना कर समझा सकता हूँ 👍</div>
+<hr>
+<h2>Css Rounded Corners</h2>
+<div>🔵 CSS Rounded Corners क्या है?
+
+Rounded Corners का मतलब है
+किसी box, image, button आदि के कोने (corners) गोल करना।
+
+👉 CSS में यह काम border-radius property से किया जाता है।
+
+🟦 border-radius का use
+Example:
+.box{
+  width: 200px;
+  height: 100px;
+  background: pink;
+  border-radius: 20px;
+}
+
+
+📌 Box के चारों कोने गोल हो जाएंगे
+
+🔢 border-radius के तरीके
+1️⃣ All corners same
+border-radius: 15px;
+
+2️⃣ Different corners
+border-radius: 10px 20px 30px 40px;
+
+
+📌 Order:
+
+top-left → top-right → bottom-right → bottom-left
+
+3️⃣ Circle बनाना
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+📌 Perfect गोल shape बनेगा ⚪
+
+4️⃣ Pill / Capsule shape (Button)
+.button{
+  border-radius: 50px;
+}
+
+
+📌 Button tablet जैसा दिखेगा
+
+🖼️ Image rounded corners
+img{
+  border-radius: 10px;
+}
+
+💌 Real Example (Shayari Card)
+.shayari-card{
+  background: white;
+  border-radius: 12px;
+}
+
+⚠️ Important Tips
+
+ज्यादा border-radius देने से shape पूरी गोल हो सकती है
+
+% responsive design में अच्छा रहता है
+
+📝 Summary
+
+Rounded corners = गोल किनारे
+
+border-radius से बनता है
+
+Box, image, button सभी में use होता है
+
+अगर आप चाहें तो मैं:
+
+✨ advanced shapes
+
+💖 card design
+
+📱 mobile friendly rounded UI
+
+भी बना कर समझा सकता हूँ 👍
+
+Want to keep using GPT-5? Try Go for free
+You need GPT-5 to continue this chat because there's an attachment. Your limit resets in 15 minutes.
+New chat
+Try Go free</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+| Selector       | Example          |
+| -------------- | ---------------- |
+| Element        | `p`              |
+| ID             | `#id`            |
+| Class          | `.class`         |
+| Universal      | `*`              |
+| Group          | `h1, p`          |
+| Descendant     | `div p`          |
+| Child          | `div > p`        |
+| Attribute      | `input[type]`    |
+| Pseudo-class   | `:hover`         |
+| Pseudo-element | `::first-letter` |
